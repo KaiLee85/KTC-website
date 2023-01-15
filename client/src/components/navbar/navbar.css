@@ -2,11 +2,32 @@
   padding: 10px;
   display: flex;
   justify-content: space-between;
-  z-index: 2;
-  /* background-image: inherit; */
+  /* z-index: 2; */
+  background-color: #6c4339;
 }
 
 .logoImg {
   width: 50px;
   height: 50px;
+}
+
+.navbarMenu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navList li {
+  list-style: none;
+  padding: 5px;
+}
+
+.navList li a {
+  text-decoration: none;
+  color: black;
 }
