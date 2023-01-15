@@ -1,14 +1,14 @@
 import React from "react";
 import logo from "../../asset/logo.png";
 import { useState } from "react";
-
+import "./navbar.css";
 function Navbar() {
   const [login, setLogin] = useState(false);
   return (
     <>
       <div className="navbarWrap">
         <a href="/" className="logo">
-          <img src={logo} alt="logo" />
+          <img src={logo} alt="logo" className="logoImg" />
         </a>
         <div className="navbarMenu">
           <ul>

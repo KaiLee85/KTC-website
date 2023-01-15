@@ -1,0 +1,20 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* .backImg {
+  background-image: url("./asset/mainbackgr.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  filter: blur(8px);
+  z-index: -1;
+} */
+/* 
+.blur {
+  backdrop-filter: blur(5px);
+} */

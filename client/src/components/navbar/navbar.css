@@ -1,0 +1,12 @@
+.navbarWrap {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 2;
+  /* background-image: inherit; */
+}
+
+.logoImg {
+  width: 50px;
+  height: 50px;
+}
