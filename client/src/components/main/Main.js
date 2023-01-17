@@ -1,12 +1,9 @@
 import React from "react";
 import "./main.css";
+import Navbar from "../navbar/Navbar";
 
 function Main() {
-  return (
-    <>
-      <div className="backImage"></div>
-    </>
-  );
+  return <>main</>;
 }
 
 export default Main;

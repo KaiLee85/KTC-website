@@ -1,9 +1,8 @@
-.backImage {
-  background-image: url("../../asset/mainbackgr.jpg");
+.regiBackImage {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
   width: 100vw;
-  /* filter: blur(8px); */
+  filter: blur(8px);
 }

@@ -2,6 +2,7 @@ import React from "react";
 import logo from "../../asset/logo.png";
 import { useState } from "react";
 import "./navbar.css";
+import { Link } from "react-router-dom";
 function Navbar() {
   const [login, setLogin] = useState(false);
   return (
@@ -13,26 +14,32 @@ function Navbar() {
         <div className="navbarMenu">
           <ul className="navList">
             <li>
-              <a href="/about">ABOUT</a>
+              <Link to="/about">ABOUT</Link>
             </li>
             <li>
-              <a href="/projects">PROJECTS</a>
+              <Link to="/projects">PROJECTS</Link>
             </li>
+
             {login && (
               <li>
-                <a href="/notice">NOTICE</a>
+                <Link to="/notice">NOTICE</Link>
               </li>
             )}
 
-            <li>
-              <a href="/login">LOGIN</a>
-            </li>
-            <li>
-              <a href="/register">REGISTER</a>
-            </li>
+            {!login && (
+              <li>
+                <Link to="/login">LOGIN</Link>
+              </li>
+            )}
+            {!login && (
+              <li>
+                <Link to="/register">REGISTER</Link>
+              </li>
+            )}
+
             {login && (
               <li>
-                <a href="/">LOGOUT</a>
+                <Link href="/">LOGOUT</Link>
               </li>
             )}
           </ul>
