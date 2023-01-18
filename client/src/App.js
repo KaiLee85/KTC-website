@@ -7,19 +7,23 @@ import Login from "./components/login/Login";
 import Register from "./components/register/Register";
 import Projects from "./components/projects/Projects";
 import Notice from "./components/notice/Notice";
+import Footer from "./components/footer/Footer";
 function App() {
   return (
     <>
-      <Navbar />
+      <div className="bodyContainer">
+        <Navbar />
 
-      <Routes>
-        <Route path="/" element={<Main />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<Register />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/notice" element={<Notice />} />
-      </Routes>
+        <Routes>
+          <Route path="/" element={<Main />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/notice" element={<Notice />} />
+        </Routes>
+        <Footer />
+      </div>
     </>
   );
 }
