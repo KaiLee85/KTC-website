@@ -8,6 +8,7 @@ import Register from "./components/register/Register";
 import Projects from "./components/projects/Projects";
 import Notice from "./components/notice/Notice";
 import Footer from "./components/footer/Footer";
+import Home from "./components/home/Home";
 function App() {
   return (
     <>
@@ -15,7 +16,8 @@ function App() {
         <Navbar />
 
         <Routes>
-          <Route path="/" element={<Main />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/main" element={<Main />} />
           <Route path="/about" element={<About />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
