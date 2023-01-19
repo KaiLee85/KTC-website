@@ -6,13 +6,22 @@ import { FaFacebookSquare } from "react-icons/fa";
 function Footer() {
   return (
     <>
-      <footer className="footerWrap">
-        <div className="footerIcon">
-          KTC CODING CLUB
-          <FaInstagram />
-          <FaFacebookSquare />
-        </div>
-        <div className="footerCopyright">Copyright &copy; 2023</div>
+      <footer>
+        {" "}
+        <footer className="footerWrap">
+          <p>KTC CODING CLUB</p>
+          <ul className="footerIcon">
+            <li>
+              <FaInstagram />
+            </li>
+            <li>
+              <FaFacebookSquare />
+            </li>
+          </ul>
+          <p className="footerCopyright">
+            Copyright &copy; 2023 designed by <span>Kai Lee</span>
+          </p>
+        </footer>
       </footer>
     </>
   );

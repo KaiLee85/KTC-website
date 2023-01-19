@@ -1,0 +1,31 @@
+footer {
+  height: auto;
+  width: 100vw;
+  background-color: #172c27;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.footerWrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footerWrap p {
+  line-height: 2rem;
+  font-size: 1.3rem;
+}
+
+.footerIcon {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footerIcon li {
+  margin: 0 10px;
+}
