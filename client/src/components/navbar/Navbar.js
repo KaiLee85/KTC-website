@@ -3,13 +3,15 @@ import logo from "../../asset/logo.png";
 import { useState } from "react";
 import "./navbar.css";
 import { Link } from "react-router-dom";
+import { TiRssOutline } from "react-icons/ti";
+
 function Navbar() {
   const [login, setLogin] = useState(false);
   return (
     <>
       <div className="navbarWrap">
         <a href="/" className="logo">
-          <img src={logo} alt="logo" className="logoImg" />
+          <TiRssOutline className="logoImg" />
         </a>
         <div className="navbarMenu">
           <ul className="navList">
