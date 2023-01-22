@@ -4,6 +4,14 @@
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
-  width: 100vw;
+  width: 100%;
   filter: blur(8px);
+
+  /* position: relative; */
+}
+
+.loginForm {
+  height: 50px;
+  width: 50px;
+  background-color: blue;
 }
