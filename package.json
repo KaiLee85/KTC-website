@@ -1,0 +1,19 @@
+{
+  "name": "newktc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node backend/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KaiLee85/KTC-website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KaiLee85/KTC-website/issues"
+  },
+  "homepage": "https://github.com/KaiLee85/KTC-website#readme"
+}

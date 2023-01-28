@@ -7,6 +7,7 @@ function Login() {
       <div className="backgrImg">
         <img src={backgroundImg} alt="backImage" className="loginBackImage" />
       </div>
+      <div className="loginForm">login</div>
     </>
   );
 }

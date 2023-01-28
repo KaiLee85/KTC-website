@@ -4,8 +4,19 @@ function Home() {
   return (
     <>
       <div className="homeWrap">
-        ss
-        <div className="img">dd</div>
+        {" "}
+        <div className="intro">
+          {" "}
+          <p>
+            We are here to <span className="emph">create project</span> and keep
+            developing
+            <span className="emph"> something creative.</span>
+          </p>
+        </div>
+        <div className="featureBtn">
+          <button>Go Chat board</button>
+          <button>Go Schedule board</button>
+        </div>
       </div>
     </>
   );
