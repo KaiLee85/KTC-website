@@ -5,9 +5,12 @@ function Login() {
   return (
     <>
       <div className="backgrImg">
-        <img src={backgroundImg} alt="backImage" className="loginBackImage" />
+        {/* <img src={backgroundImg} alt="backImage" className="loginBackImage" /> */}
+        <div className="loginForm">
+          <p>LOGIN</p>
+          <form></form>
+        </div>
       </div>
-      <div className="loginForm">login</div>
     </>
   );
 }

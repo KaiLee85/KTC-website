@@ -1,6 +1,9 @@
 const User = require("../models/userModel");
 const bcrypt = require("bcryptjs");
+const jwt = require("jsonwebtoken");
 const asyncHandler = require("express-async-handler");
+
+//registeruser
 
 const registerUser = asyncHandler(async (req, res) => {
   const { name, email, password } = req.body;
@@ -27,13 +30,46 @@ const registerUser = asyncHandler(async (req, res) => {
     password: hashedPassword,
   });
   if (user) {
-    res.status(201).json({ _id: user._id, name: user.name, email: user.email });
+    res.status(201).json({
+      _id: user._id,
+      name: user.name,
+      email: user.email,
+      token: generateToken(user._id),
+    });
   } else {
     res.status(400);
     throw new error("Invalid user data");
   }
 });
 
-const loginUser = async (req, res) => {};
+//login user
 
-module.exports = { registerUser, loginUser };
+const loginUser = asyncHandler(async (req, res) => {
+  const { email, password } = req.body;
+
+  const user = await User.findOne({ email });
+
+  if (user && (await bcrypt.compare(password, user.password))) {
+    res.status(200).json({
+      _id: user._id,
+      name: user.name,
+      email: user.email,
+      token: generateToken(user._id),
+    });
+  } else {
+    res.status(401);
+    throw new error("Invalid credentials");
+  }
+});
+
+//protect router, only access who have a token
+const getMe = asyncHandler(async (req, res) => {
+  res.send("ya");
+});
+
+//Generate Token
+const generateToken = (id) => {
+  return jwt.sign({ id }, process.env.JWT_SECRET, { expiresIn: "1hr" });
+};
+
+module.exports = { registerUser, loginUser, getMe };
